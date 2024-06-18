@@ -61,7 +61,7 @@ int main(int argc, char **argv) {
         return -1;
     }
 
-    dot = 2;
+    dot = offset;
     dotinc = 0;
     do {
         printf("%8lx: ", dot);

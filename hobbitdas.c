@@ -70,9 +70,9 @@ getinstr(Map *map, int isp)
                 dotinc += 2*sizeof(Parcel);
         }
         else {
-                src = getparcel(mymap, mydot+2, myisp)<<16;
+                src = (long)(getparcel(mymap, mydot+2, myisp))<<16;
                 src |= getparcel(mymap, mydot+4, myisp);
-                dst = getparcel(mymap, mydot+6, myisp)<<16;
+                dst = (long)(getparcel(mymap, mydot+6, myisp))<<16;
                 dst |= getparcel(mymap, mydot+8, myisp);
                 dotinc += 4*sizeof(Parcel);
         }
